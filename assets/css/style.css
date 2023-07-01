@@ -111,6 +111,7 @@ img {
 
 .section__title {
   font-size: var(--h1-font-size);
+  font-weight: var(--semi-bold-font);
   color: var(--title-color);
 }
 
@@ -226,6 +227,9 @@ img {
 
 
 /*!==================== HOME ====================*/
+.home {
+  /* display: none; */
+}
 .home-container {
   gap: 1rem;
 }
@@ -332,4 +336,42 @@ img {
   align-items: center;
 }
 
-/*!==================== BUTTON ====================*/
+/*!==================== ABOUT ====================*/
+.about_img {
+  width: 250px;
+  border-radius: .5rem;
+  align-self: center;
+  justify-self: center;
+}
+
+.about_description {
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about_stats {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about_stats_title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--semi-bold-font);
+  color: var(--title-color);
+}
+
+.about_stats_name,
+.about_stats_title {
+  display: block;
+  text-align: center;
+}
+
+.about_stats_name {
+  font-size: var(--smaller-font-size);
+}
+
+.about_donwload_btn {
+  display: flex;
+  justify-content: center;
+}
