@@ -28,16 +28,16 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 /*==================== SKILLS TOGGLE OPEN/CLOSE ====================*/
 const skillsHeader = document.querySelectorAll(".skills_header"),
-  skillsContent = document.getElementsByClassName("skills_content");
+skillsContent = document.getElementsByClassName("skills_content");
 
 function toggleSkills() {
   let itemClass = this.parentNode.className;
   let skillsContent = document.getElementsByClassName("skills_content");
-
+  
   for (let i = 0; i < skillsContent.length; i++) {
     skillsContent[i].className = "skills_content skills_close";
   }
-
+  
   if (itemClass === "skills_content skills_close") {
     this.parentNode.className = "skills_content skills_open";
   }
@@ -46,3 +46,23 @@ function toggleSkills() {
 skillsHeader.forEach((e1) => {
   e1.addEventListener("click", toggleSkills);
 });
+
+
+const tabs = document.querySelectorAll('[data-target]');
+const tabContents = document.querySelectorAll('[data-content]');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.target)
+
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('qualification_active')
+    })
+    target.classList.add('qualification_active')
+
+    tabs.forEach(tab => {
+      tab.classList.remove('qualification_active')
+    })
+    tab.classList.add('qualification_active')
+  })
+})
