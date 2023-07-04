@@ -925,3 +925,31 @@ img {
 .scroll-header {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
 }
+
+
+/*!==================== SCROLL UP ====================*/
+.scroll-up {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: var(--first-color);
+  padding: 0 .3rem;
+  border-radius: .4rem;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+}
+
+.scroll-up:hover {
+  background-color: var(--first-color-alt);
+}
+
+.scrolUp-icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+
+/*!==================== SHOW SCROLL ====================*/
+.show-scroll {
+  bottom: 5rem;
+}
