@@ -88,7 +88,7 @@ modalCloses.forEach((modalClose) => {
 
 
 /*==================== PORTFOLIO TABS ====================*/
-let swiper = new Swiper('.swiper', {
+let swiper = new Swiper('.portfolio_container', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -97,10 +97,36 @@ let swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
     clickable: true,
   },
-
+  
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+});
+
+
+/*==================== PORTFOLIO TABS ====================*/
+let swiperTestimonial = new Swiper('.testimonial_container', {
+  // Optional parameters
+  direction: 'horizontal',
+  look: true,
+  grabCursor: true,
+  spaceBetween: 48,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    568: {
+      slidesPerView: 2,
+    }
+  }
+  
 });
