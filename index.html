@@ -8,6 +8,9 @@
     <!-- ==================== CSS ==================== -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- ==================== SWIPER ==================== -->
+    <link rel="stylesheet" href="assets/css/swiper.css">
+
     <!-- ==================== UNICONS ICONS ==================== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
@@ -501,6 +504,53 @@
                 </div>
             </div>
         </section>
+
+
+        <!--?==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h3 class="section__title">Portfolio</h3>
+            <span class="section__subtitle">Most recent work</span>
+
+            <div class="portfolio_container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="portfolio_content swiper-slide">
+                        <img class="portfolio_img" src="assets/img/portfolio1.png" alt="Course Selling Site">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Course Selling Website</h3>
+                            <span class="portfolio_subtitle">A comprehensive online platform designed for selling online course.</span>
+
+                            <a href="https://illunise.github.io/course-selling-website/" target="_blank" class="button button-small button-flex portfolio_button">
+                                Preview 
+                                <i class="uil uil-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio_content swiper-slide">
+                        <img class="portfolio_img" src="assets/img/portfolio2.png" alt="Course Selling Site">
+
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">PNR Status Website</h3>
+                            <span class="portfolio_subtitle">A comprehensive online platform designed to provide real-time PNR Status.</span>
+
+                            <a href="https://illunise.github.io/pnr-status/" target="_blank" class="button button-flex button-small portfolio_button">
+                                Preview 
+                                <i class="uil uil-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b portfolio_swiper_icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b portfolio_swiper_icon"></i>
+                </div>
+            </div>
+        </section>
        
     </main>
 
@@ -509,6 +559,9 @@
 
     </footer>
     
+
+    <!-- ==================== SWIPER JS ==================== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <!-- ==================== MAIN JS ==================== -->
     <script src="assets/js/main.js"></script>

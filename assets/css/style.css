@@ -682,3 +682,44 @@ img {
   opacity: 1;
   visibility: visible;
 }
+
+
+/*!==================== PORTFOLIO ====================*/
+.portfolio_container {
+  overflow: initial;
+}
+
+.portfolio_content {
+  padding: 0 3rem;
+  display: grid !important;
+}
+
+.portfolio_img {
+  width: 265px;
+  border-radius: .5rem;
+  justify-self: center;
+}
+
+.portfolio_title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.portfolio_subtitle {
+  margin-bottom: var(--mb-0-75);
+  display: block;
+}
+
+.portfolio_button:hover .button-icon{
+  transform: translateX(.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '' !important;
+}
+
+.portfolio_swiper_icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}

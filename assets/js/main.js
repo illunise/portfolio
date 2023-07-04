@@ -69,8 +69,8 @@ tabs.forEach(tab => {
 
 /*==================== SERVICES MODAL ACTIVE/CLOSE ====================*/
 const modalViews = document.querySelectorAll('.services_modal_coontainer'),
-      modalBtns = document.querySelectorAll('.services_button'),
-      modalCloses = document.querySelectorAll('.services_modal_icon')
+modalBtns = document.querySelectorAll('.services_button'),
+modalCloses = document.querySelectorAll('.services_modal_icon')
 
 modalBtns.forEach((modalBtn, i) => {
   modalBtn.addEventListener('click', () => {
@@ -85,3 +85,22 @@ modalCloses.forEach((modalClose) => {
     })
   })
 })
+
+
+/*==================== PORTFOLIO TABS ====================*/
+let swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
