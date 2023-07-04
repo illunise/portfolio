@@ -351,6 +351,15 @@ img {
   color: var(--first-color-alt);
 }
 
+.button-white {
+  background-color: #fff;
+  color: var(--first-color);
+}
+
+.button-white:hover {
+  background-color: #fff;
+}
+
 /*!==================== ABOUT ====================*/
 .about_img {
   width: 250px;
@@ -722,4 +731,38 @@ img {
 .portfolio_swiper_icon {
   font-size: 2rem;
   color: var(--first-color);
+}
+
+
+/*!==================== PROJECT IN MIND ====================*/
+.project {
+  text-align: center;
+}
+
+.project_bg {
+  background-color: var(--first-color-second);
+  padding-top: 3rem;
+}
+
+.project_title {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+
+.project_subtitle {
+  margin-bottom: var(--mb-1-5);
+}
+
+.project_title,
+.project_subtitle {
+  color: #fff;
+}
+
+.project_img {
+  width: 232px;
+  justify-self: center;
+}
+
+.button-white:hover .button-icon {
+  transform: translateX(.25rem);
 }
