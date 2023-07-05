@@ -700,21 +700,21 @@
                     <div class="form_inputs grid">
                         <div class="contact_content">
                             <label for="name" class="contact_label">Name</label>
-                            <input type="text" name="name" id="name" class="contact_input">
+                            <input type="text" name="name" id="name" class="contact_input" required minlength="4">
                         </div>
                         <div class="contact_content">
                             <label for="email" class="contact_label">Email</label>
-                            <input type="email" name="email" id="email" class="contact_input">
+                            <input type="email" name="email" id="email" class="contact_input" required>
                         </div>
                     </div>
 
                     <div class="contact_content">
                         <label for="project" class="contact_label">Project</label>
-                        <input type="text" name="project" id="subject" class="contact_input">
+                        <input type="text" name="project" id="subject" class="contact_input" required minlength="10">
                     </div>
                     <div class="contact_content">
                         <label for="message" class="contact_label">Message</label>
-                        <textarea style="resize: none;" name="message" id="message" cols="0" rows="7" class="contact_input"></textarea>
+                        <textarea style="resize: none;" name="message" id="message" cols="0" rows="7" class="contact_input" required minlength="20"></textarea>
                     </div>
 
                     <div>
