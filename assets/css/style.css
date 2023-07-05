@@ -6,7 +6,7 @@
   --header-height: 3rem;
 
   /**========== Colors ==========*/
-  --hue-color: 265; /* Violet : 250*/
+  --hue-color: 250; /* Violet : 250*/
 
   /**========== HSL color mode ==========*/
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -21,6 +21,7 @@
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --header-shadow: rgba(0, 0, 0, .15);
 
   /**========== Font & Typography ==========*/
   --font-body: "Poppins", sans-serif;
@@ -65,6 +66,21 @@
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
   }
+}
+/*!==================== DARK THEME VARIABLES ====================*/
+body.dark-theme {
+
+  /**========== HSL color mode ==========*/
+  --first-color-second: hsl(var(--hue-color), 30%, 8%);
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 75%);
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color), 28%, 12%);
+  --container-color: hsl(var(--hue-color), 29%, 16%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  --header-shadow: rgba(255, 255, 255, .15);
+
 }
 
 /*!==================== BASE ====================*/
@@ -126,6 +142,23 @@ img {
   text-align: center;
 }
 
+/*!==================== DARK/LIGHT THEME ====================*/
+.nav_btn {
+  display: flex;
+  align-items: center;
+}
+
+.theme_icon {
+  color: var(--text-color);
+  font-size: 1.25rem;
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
+
+.theme_icon:hover {
+  color: var(--first-color);
+}
+
 /*!==================== LAYOUT ====================*/
 .container {
   max-width: 768px;
@@ -179,7 +212,7 @@ img {
     width: 100%;
     background-color: var(--body-color);
     padding: 2rem 1.5rem 4rem;
-    box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+    box-shadow: 0 -1px 4px var(--header-shadow);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: .3s;
   }
@@ -952,4 +985,21 @@ img {
 /*!==================== SHOW SCROLL ====================*/
 .show-scroll {
   bottom: 5rem;
+}
+
+
+/*!==================== SHOW BAR ====================*/
+::-webkit-scrollbar {
+  width: .40rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-light);
 }
